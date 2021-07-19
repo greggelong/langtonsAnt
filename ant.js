@@ -65,7 +65,7 @@ class Ant{
             this.turnRight();
             antworld[this.x][this.y] = this.clr; // places ant symbol
             this.moveForward(); 
-        }else if (state == 1){
+        }else if (state >= 1){    // one or two for ant symbol
             this.turnLeft();
             antworld[this.x][this.y] = 0;
             this.moveForward();

@@ -18,7 +18,8 @@ function setup() {
   stroke(0);
   
   antworld = twoDee(col,row,0);
-  gregAnt = new Ant(40,40,1)
+  gregAnt = new Ant(floor(random(20,60)),floor(random(20,60)),1);  //Ant(loc,loc,Symbol for array);
+  mjAnt = new Ant(floor(random(20,60)),floor(random(20,60)),2)
   
 
   showWorld();
@@ -49,7 +50,8 @@ function draw(){
   
   for (let n =0; n< 50; n++){
   
-  gregAnt.moveAnt()
+  gregAnt.moveAnt();
+  mjAnt.moveAnt();
   
     
     
@@ -66,10 +68,12 @@ function showWorld(){
   
   for (let i =0; i <col;i++){
     for(let j =0; j< row;j++){
-      if (antworld[i][j] == 0){
-        fill(0); // nothing
+      if (antworld[i][j] == 1){
+        fill(255,191,0); // ant color 1
+      }else if(antworld[i][j]== 2 ){
+        fill(200,50,0);
       }else{
-        fill(255,191,0)
+        fill(0);
       }
       rect(i*sz,j*sz,sz,sz);
     }
