@@ -54,7 +54,7 @@ However just because it is deterministic does not imply that you could predict t
 
 you will just have to let it play out.  However you may be able to find some attractors like oscillations,
 
-or 
+or the highways (long regular columns).
 
 You can play with the ants by turning one off for a bit (checking and un-checking the box). Pausing the ant.
 
