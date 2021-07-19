@@ -40,7 +40,7 @@ These two ants interacting according to simple rules often create
 
 stable oscillations. (like oscillations of in the game of life).
 
-The ossilation periods can be short or long. (actually surprisingly long!)
+The oscillation periods can be short or long. (actually surprisingly long!)
 
 Some very complex and interesting behavior comes from the interaction of
 
