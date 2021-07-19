@@ -10,11 +10,13 @@ let col =80;
 let row =80;
 let antworld;
 let gregAnt;
+let mybox;
  
 
 function setup() {
   createCanvas(800, 800);
   //stroke(255,190,0);
+  mybox = createCheckbox('if checked there are two ants', true);
   stroke(0);
   
   antworld = twoDee(col,row,0);
@@ -51,8 +53,9 @@ function draw(){
   for (let n =0; n< 50; n++){
   
   gregAnt.moveAnt();
-  mjAnt.moveAnt();
-  
+  if (mybox.checked()){
+    mjAnt.moveAnt();
+  }
     
     
  }
