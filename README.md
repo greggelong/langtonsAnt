@@ -64,7 +64,7 @@ What seems really amazing to me is that:
 
  - if you have two ants starting in an oscillating configuration (either long or short),
 
- - Then take out one ant, leaving the other two wander for many hundreds of steps,
+ - Then take out one ant, leaving the other to wander for many hundreds of steps,
 
  - then add the second ant back in, 
 
