@@ -11,6 +11,8 @@ let row =80;
 let antworld;
 let gregAnt;
 let mybox;
+let myslider;
+let sd;
  
 
 function setup() {
@@ -18,7 +20,9 @@ function setup() {
   //stroke(255,190,0);
   mybox = createCheckbox('if checked there are two ants', true);
   stroke(0);
-  
+  sd= createP("Slider = Number of steps per frame: 1 to 100");
+  myslider = createSlider(1, 100, 1, 1);
+ 
   antworld = twoDee(col,row,0);
   gregAnt = new Ant(floor(random(20,60)),floor(random(20,60)),1);  //Ant(loc,loc,Symbol for array);
   mjAnt = new Ant(floor(random(20,60)),floor(random(20,60)),2)
@@ -50,7 +54,7 @@ function twoDee(col, row,data){
 
 function draw(){
   
-  for (let n =0; n< 50; n++){
+  for (let n =0; n< myslider.value(); n++){
   
   gregAnt.moveAnt();
   if (mybox.checked()){
