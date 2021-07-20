@@ -60,5 +60,29 @@ You can play with the ants by turning one off for a bit (checking and un-checkin
 
 Then letting her go again.  She may quickly eat up the paths put down by the other ant.
 
+What seems really amazing to me is that:
+
+ - if you have two ants starting in an oscillating configuration (either long or short),
+
+ - Then take out one ant, leaving the other two wander for many hundreds of steps,
+
+ - then add the second ant back in, 
+
+ - the ants are again in an oscillating configuration (although a different oscillating). 
+
+ This seems that an oscillating configuration is determined by the initial configuration of the ants
+
+ in the ant world, and it will return to an oscillating configuration even if the system is is changed
+
+ by pausing one ant for hundreds of steps.  
+
+ My ant world is not an infinite plane, it wraps around so is a torus or doughnut.
+
+ This will will definitely effect the behavior of ant patterns that wrap around and hit themselves
+
+ but I have seen this behavior in other short term oscillations.
+
+
+
 
 
