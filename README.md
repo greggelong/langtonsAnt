@@ -83,6 +83,36 @@ What seems really amazing to me is that:
  but I have seen this behavior in other short term oscillations.
 
 
+ ## Two ants in processing 
+
+ I have refactored the processing code to a java Ant() class, following the my work in javascript
+
+ Here I am plotting pixels so you get to see 10 times more steps before wrapping around the tours.
+
+ something interesting about the oscillations of two ants:
+
+ if the offset of the second ant is has both the offx and offy the same it will not 
+
+ create an oscillation (at least i didn't see one, perhaps after millions of steps)
+
+ oscillations can come about with
+
+ - offx of 2, and offy of 1, 
+ - offx 30, offy 7,
+ - offx 20, offy 5
+ - offx 7 , offy 2 (but not 3)
+ - offx 7 , offy 4 (this is a good one)
+ - offx 154, offy 169 (this has nice highways)
+ - offx 35, offy,40 (this is creates two iconic Langton's ant highways that get eaten by the other ant)
+ - offx 200, offy 105 (creates long highways that in a very long period oscillation)
+ - if you reverse these they are different oscillations
+
+ as far as I have seen one has to be odd and the other even to get an oscillation. Both even or both odd 
+
+ no oscillation.     
+
+
+
 
 
 
