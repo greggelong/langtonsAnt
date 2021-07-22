@@ -20,6 +20,7 @@ void setup(){
   y=200;
   dir = 
   grid[x][y]= 1;
+  print("hello");
   
   
 }
@@ -68,17 +69,33 @@ void moveForward(){
 }
 
 void draw(){
-  background(255);
+  background(100);
   int state = grid[x][y];
   
   if (state == 0){
     turnRight();
     grid[x][y] = 1;
+  }else if(state ==1 ){
+    turnLeft();
+    grid[x][y] =0;
+  }
+    
     moveForward();
     
-    
-    
+ 
+  
+   loadPixels();
+  for (int i = 0; i < width; i++) {
+    for (int j = 0; j < height; j++) {
+      int pix = i + width * j;
+      if (grid[i][j] == 0) {
+        pixels[pix] = color(255);
+      } else {
+        pixels[pix] = color(0);
+      }
+    }
   }
+  updatePixels();
   
   
   
