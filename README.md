@@ -85,7 +85,7 @@ What seems really amazing to me is that:
 
  ## Two ants in processing 
 
- I have refactored the processing code to use a java class called Ant(), similar to my javascript code.
+ I have refactored the processing code to use a java class I call Ant(), similar to my javascript code.
 
  Here I am plotting pixels so you get to see 10 times more steps before they wrap around the tours.
 
@@ -93,7 +93,7 @@ What seems really amazing to me is that:
 
  First I noticed that if the offset of the second ant has both the x offset and y offset the same it will not 
 
- create an oscillation (at least i didn't see one, perhaps after millions of steps).
+ create an oscillation (at least i didn't see one, perhaps after tens of thousands of steps).
  
  Then I noticed that for there to be an oscillation, one of offsets for the second ant, either the x or y,
 
@@ -103,7 +103,7 @@ What seems really amazing to me is that:
 
  here is some of my investigation:
 
- - offx of 2, and offy of 1, 
+ - offx 2, offy of 1, 
  - offx 30, offy 7,
  - offx 20, offy 5
  - offx 7 , offy 2 (but not 3)
@@ -111,7 +111,7 @@ What seems really amazing to me is that:
  - offx 154, offy 169 (this has nice highways)
  - offx 35, offy,40 (this is creates two iconic Langton's ant highways that get eaten by the other ant)
  - offx 200, offy 105 (creates long highways that in a very long period oscillation)
- - offx 58, offy 167
+ - offx 58, offy 167 
  - if you reverse these they are different oscillations
 
  as far as I have seen one has to be odd and the other even to get an oscillation. Both even or both odd 
