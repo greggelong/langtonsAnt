@@ -11,13 +11,13 @@ int ANTDOWN =2;
 int ANTLEFT =3;
 
 int dir;
-
+ 
 
 void setup(){
-  size(400,400);
+  size(800,800);
   grid = new int[width][height];
-  x=200;
-  y=200;
+  x=width/2;
+  y=height/2;
   dir = 
   grid[x][y]= 1;
   print("hello");
@@ -54,13 +54,13 @@ void moveForward(){
   }
   // check edges
   
-  if (x > width) {
+  if (x > width-1) {
    x =0; 
   } else if (x < 0){
     x = width-1;
   }
   
-  if (y > height) {
+  if (y > height-1) {
    y =0; 
   } else if (y < 0){
     y = height-1;
@@ -70,6 +70,8 @@ void moveForward(){
 
 void draw(){
   background(100);
+  
+  for (int i =0; i < 100; i++){
   int state = grid[x][y];
   
   if (state == 0){
@@ -82,7 +84,7 @@ void draw(){
     
     moveForward();
     
- 
+  }
   
    loadPixels();
   for (int i = 0; i < width; i++) {
@@ -91,7 +93,7 @@ void draw(){
       if (grid[i][j] == 0) {
         pixels[pix] = color(255);
       } else {
-        pixels[pix] = color(0);
+        pixels[pix] = color(255,0,0);
       }
     }
   }
