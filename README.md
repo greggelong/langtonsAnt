@@ -87,7 +87,7 @@ What seems really amazing to me is that:
 
  I have refactored the processing code to use a java class I call Ant(), similar to my javascript code.
 
- Here I am plotting pixels so you get to see 10 times more steps before they wrap around the tours.
+ Here I am plotting pixels so you get to see 10 times more steps before they wrap around the torus.
 
  Something interesting about the oscillations of two ants:
 
@@ -112,6 +112,7 @@ What seems really amazing to me is that:
  - offx 35, offy,40 (this is creates two iconic Langton's ant highways that get eaten by the other ant)
  - offx 200, offy 105 (creates long highways that in a very long period oscillation)
  - offx 58, offy 167 
+ - offx 60, offy 1 (this is a nice long one but needs to be on torus)
  - if you reverse these they are different oscillations
 
  as far as I have seen one has to be odd and the other even to get an oscillation. Both even or both odd 
