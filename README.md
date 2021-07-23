@@ -121,11 +121,11 @@ What seems really amazing to me is that:
 
 ## refactor javascript Langton's ant
 
-- [] set the first ant to the center of the ant world
-- [] write an algorithm that randomly pics an offset for x and y of the second ant
-- [] display in the html the x and y offset  ( so you can record the ones that make interesting oscillations)
-- [] put in a button and function for start over, instead of just refreshing
-- [] could you write an algorithm that would check for oscillations, you could sum the array and if it ever gets smaller it is an oscillation.  you would not even need to display it.
+- [ ] set the first ant to the center of the ant world
+- [ ] write an algorithm that randomly pics an offset for x and y of the second ant
+- [ ] display in the html the x and y offset  ( so you can record the ones that make interesting oscillations)
+- [ ] put in a button and function for start over, instead of just refreshing
+- [ ] could you write an algorithm that would check for oscillations, you could sum the array and if it ever gets smaller it is an oscillation.  you would not even need to display it.
 
 
 
