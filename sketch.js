@@ -37,10 +37,10 @@ function setup() {
 function worldSetup(){
   antworld = twoDee(col,row,0);
   gregAnt = new Ant(40,40,1);  //Ant(loc,loc,Symbol for array);
-  let xoff = floor(random(1,30));
-  let yoff = floor(random(1,30));
+  let xoff = floor(random(-30,30));
+  let yoff = floor(random(-30,30));
   mjAnt = new Ant(40+xoff, 40+yoff,2);
-  output.html(`second ant's x and y offset, ${xoff}, ${yoff}`)
+  output.html(`second ant's x and y offset: ${xoff}, ${yoff}`)
 
   showWorld();
 
