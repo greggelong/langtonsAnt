@@ -13,6 +13,8 @@ let gregAnt;
 let mybox;
 let myslider;
 let sd;
+let output;
+let resetButt;
  
 
 function setup() {
@@ -22,14 +24,26 @@ function setup() {
   stroke(0);
   sd= createP("Slider = Number of steps per frame: 1 to 100");
   myslider = createSlider(1, 100, 1, 1);
+  output = createP("second ants x and y offset");
+  resetButt = createButton("reset")
+  resetButt.clicked(worldSetup);
  
   antworld = twoDee(col,row,0);
-  gregAnt = new Ant(floor(random(20,60)),floor(random(20,60)),1);  //Ant(loc,loc,Symbol for array);
-  mjAnt = new Ant(floor(random(20,60)),floor(random(20,60)),2)
-  
+  gregAnt = new Ant(40,40,1);  //Ant(loc,loc,Symbol for array);
+  let xoff = floor(random(1,30));
+  let yoff = floor(random(1,30));
+  mjAnt = new Ant(40+xoff, 40+yoff,2);
+  output.html(`second ant's x and y offset, ${xoff}, ${yoff}`)
 
   showWorld();
   
+  
+}
+
+function worldSetup(){
+
+
+
   
 }
 
