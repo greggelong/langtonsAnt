@@ -3,7 +3,8 @@
 // coding this in p5 and processing.
 // coded while watching shiffmans processing video any bugs;) introduced are my own. 
 
-// I am redering this on canvas and have a couple of other functins for creating the antworld and displaying it.
+// I am rendering this on canvas and have a couple of other functions for creating the antworld and displaying it.
+//  and interacting with the two ants
 
 let sz =10
 let col =80;
