@@ -26,8 +26,15 @@ function setup() {
   myslider = createSlider(1, 100, 1, 1);
   output = createP("second ants x and y offset");
   resetButt = createButton("reset")
-  resetButt.clicked(worldSetup);
+  resetButt.mousePressed(worldSetup);
+  worldSetup();
  
+  
+  
+  
+}
+
+function worldSetup(){
   antworld = twoDee(col,row,0);
   gregAnt = new Ant(40,40,1);  //Ant(loc,loc,Symbol for array);
   let xoff = floor(random(1,30));
@@ -36,15 +43,9 @@ function setup() {
   output.html(`second ant's x and y offset, ${xoff}, ${yoff}`)
 
   showWorld();
-  
-  
-}
-
-function worldSetup(){
 
 
 
-  
 }
 
 

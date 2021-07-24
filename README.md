@@ -113,6 +113,7 @@ What seems really amazing to me is that:
  - offx 200, offy 105 (creates long highways that in a very long period oscillation)
  - offx 58, offy 167 
  - offx 60, offy 1 (this is a nice long one but needs to be on torus)
+ - offx 13, iffy 28 (looks really cool on the javascript version)
  - if you reverse these they are different oscillations
 
  as far as I have seen one has to be odd and the other even to get an oscillation. Both even or both odd 
@@ -121,10 +122,10 @@ What seems really amazing to me is that:
 
 ## refactor javascript Langton's ant
 
-- [ ] set the first ant to the center of the ant world
-- [ ] write an function that randomly pics an offset for x and y of the second ant
-- [ ] display in the html the x and y offset  ( so you can record the ones that make interesting oscillations)
-- [ ] put in a button and function for start over, instead of just refreshing
+- [x] set the first ant to the center of the ant world
+- [x] write an function that randomly pics an offset for x and y of the second ant
+- [x] display in the html the x and y offset  ( so you can record the ones that make interesting oscillations)
+- [x] put in a button and function for start over, instead of just refreshing
 - [ ] could you write an algorithm that would check for oscillations, you could sum the array and if it ever gets smaller it is an oscillation.  you would not even need to display it.
 
 
