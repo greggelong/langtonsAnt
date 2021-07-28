@@ -13,3 +13,11 @@ textarea {
  font-size:large;
   background: black;
 }
+
+#footer{
+  font-size: large;
+  position: absolute;
+  bottom: 10px;
+  width: 50%;
+  border: 3px solid #8AC007;
+}
