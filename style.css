@@ -14,10 +14,10 @@ textarea {
   background: black;
 }
 
-#footer{
+#header{
   font-size: large;
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   width: 50%;
   border: 3px solid #8AC007;
 }
