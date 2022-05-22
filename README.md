@@ -129,7 +129,15 @@ What seems really amazing to me is that:
 - [ ] could you write an algorithm that would check for oscillations, you could sum the array and if it ever gets smaller it is an oscillation.  you would not even need to display it.
 
 
+----
+## antTurtle May 20th 2022 
 
+a new algorithm for plotting the ant using a simple turtle
 
+you can have the ant turn at differnt angles 
+
+this produces some interesting results
+
+https://github.com/greggelong/antTurtle
 
 
