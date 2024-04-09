@@ -24,7 +24,7 @@ function setup() {
   mybox = createCheckbox('if checked there are two ants', true);
   stroke(0);
   sd= createP("Slider = Number of steps per frame: 1 to 100");
-  myslider = createSlider(1, 100, 1, 1);
+  myslider = createSlider(1, 100, 70, 1);
   output = createP("second ants x and y offset");
   resetButt = createButton("reset")
   resetButt.mousePressed(worldSetup);
